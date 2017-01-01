@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>JS 5-6 by Taras Semeniuk</title>
+<!-- 
+	<link rel="stylesheet" href="https://unpkg.com/purecss@0.6.1/build/pure-min.css">
+	<link rel="stylesheet" href="https://unpkg.com/purecss@0.6.1/build/grids-responsive-min.css">
+-->
+	<link rel="stylesheet" href="css/pure-min.css">
+	<link rel="stylesheet" href="css/grids-responsive-min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/script.js"></script>
+
+	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+</head>
+
+<body onload="initIt()">
+
+<!-- ================ display level =============== -->
+<div class="pure-g">
+	<div class="pure-u-1 pure-u-sm-2-24 pure-u-md-2-24 pure-u-lg-2-24 aside"></div>
+	<div class="pure-u-1 pure-u-sm-20-24 pure-u-md-20-24 pure-u-lg-20-24 timer flex-center">
+		<h1 id='timerDisplay'>00:00:00</h1>
+		<h4 id="timerDisplayMs">000</h4>
+	</div>
+	<div class="pure-u-1 pure-u-sm-2-24 pure-u-md-2-24 pure-u-lg-2-24 aside"></div>
+</div>
+
+<!-- ==================== buttons level =============== -->
+<div class="pure-g">
+
+	<div class="pure-u-1 pure-u-sm-1-24 pure-u-md-4-24 pure-u-lg-6-24 aside"></div>
+
+	<div class="pure-u-1 pure-u-sm-7-24 pure-u-md-5-24 pure-u-lg-4-24 flex-center">
+		<button id="buttSP" onclick="startPauseButt()" class="pure-button button-xlarge">Start</button>
+	</div>
+
+	<div class="pure-u-1 pure-u-sm-8-24 pure-u-md-6-24 pure-u-lg-4-24 flex-center">
+		<button id="buttLS" onclick="listIt()" class="pure-button button-xlarge">Split</button>
+	</div>
+
+	<div class="pure-u-1 pure-u-sm-7-24 pure-u-md-5-24 pure-u-lg-4-24 flex-center">
+		<button id="buttRE" onclick="resetIt()" class="pure-button button-xlarge">Reset</button>
+	</div>
+
+	<div class="pure-u-1 pure-u-sm-1-24 pure-u-md-4-24 pure-u-lg-6-24 aside"></div>
+
+</div>
+
+<!-- ================ split results level =============== -->
+<div class="pure-g">
+
+	<div class="pure-u-1 pure-u-sm-2-24 pure-u-md-4-24 pure-u-lg-8-24 aside"></div>
+	<div class="pure-u-1 pure-u-sm-20-24 pure-u-md-16-24 pure-u-lg-8-24 splitWin flex-top">
+		<h5 id="timerDisplayLs"></h5>
+	</div>
+	<div class="pure-u-1 pure-u-sm-2-24 pure-u-md-4-24 pure-u-lg-8-24 aside"></div>
+</div>
+
+</body></html>

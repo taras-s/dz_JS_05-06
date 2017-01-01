@@ -1,0 +1,120 @@
+
+/*================== RESET ====================*/
+
+body {
+	font-family: "Open Sans Light", Arial, SansSerif;
+	font-style: normal;
+	background-color: #444;
+	padding-top: 10vh;
+}
+
+div {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	/*border: 1px solid black;*/
+}
+
+.flex-center{
+	display: flex;
+	justify-content: center;
+	align-content: center;
+}
+
+.flex-top{
+	display: flex;
+	justify-content: center;
+	align-content: flex-start;
+	padding-top: 20px;
+	overflow: auto;
+}
+
+/*======================== buttons =================== */
+
+.button-xlarge {
+	/*width: calc(3em + 35%);*/
+	width: 90%;
+	height: 2em;
+	margin: 0.5em 0em;
+
+	text-align: center;
+	font-size: 130%; 
+	font-weight: bold;
+	border-radius: 0.5em;
+	color: #fff;
+	padding: 1px;
+}
+
+.button-xlarge:active{
+	box-shadow: inset 0 0 10px rgba(0,0,0,0.7);
+}
+
+#buttSP{
+	background-color: #0a0;
+}
+
+#buttLS{
+	background-color: #888;
+}
+
+#buttRE{
+	background-color: #a00;
+}
+
+/*=================== timer ===================*/
+
+.timer{
+	height: calc(5em + 20vmin);
+	text-align: center;
+	border: 2pt solid #aaa;
+	background-color: #040;
+	border-radius: 1em;
+}
+
+h1{
+	display: inline-block;
+	text-align: center;
+	font-size: 15vmin;
+	color: #fff;
+}
+
+h4{
+	display: inline-block;
+	font-size: 6vmin;
+	color: #8a8;
+}
+
+h5{
+	display: inline-block;
+	font-size: 24pt;
+	color: #8a8;
+	line-height: 20pt;
+	margin: 0px;
+}
+
+h6{
+	display: inline-block;
+	font-size: 14pt;
+	color: #8a8;
+	line-height: 20pt;
+	margin: 0px;
+}
+
+.aside{
+	height: 2px;
+}
+
+.splitWin{
+	margin: 0.5em 0;
+	height: 300px;
+	text-align: center;
+	border-radius: 0.5em;
+	background-color: #333;
+	border: 2pt solid #aaa;
+
+}
+
+
+
+
+
